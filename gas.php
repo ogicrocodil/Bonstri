@@ -13,7 +13,7 @@ echo "Masukkan No Telepon : ";
 $msisdn = trim(fgets(STDIN));
 $otp = $tri->request_otp($msisdn,$imei);
 echo $otp[1] . "\r\n";
-echo "Masukkan OTP : "
+echo "Masukkan OTP : ";
 $otp = trim(fgets(STDIN));
 $login = $tri->login($msisdn,$otp);
 $login = json_decode($login,true);
