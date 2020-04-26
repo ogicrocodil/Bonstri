@@ -9,11 +9,11 @@ include 'tri_req.php';
 
 $tri = new tri();
 $imei = "868880043302499";
-echo "Masukkan No Telepon : ";
+echo "Masukkan No Telepon : ";0895618190662
 $msisdn = trim(fgets(STDIN));
 $otp = $tri->request_otp($msisdn,$imei);
 echo $otp[1] . "\r\n";
-echo "Masukkan OTP : ";
+echo "Masukkan OTP : ";369994
 $otp = trim(fgets(STDIN));
 $login = $tri->login($msisdn,$otp);
 $login = json_decode($login,true);
